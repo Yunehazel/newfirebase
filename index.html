@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+<body>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body">
+            <form>
+                <br/>
+                <input type="hidden" id="upd_id" name="firstname" placeholder="Your name..">
+                <label for="fname">First Name</label>
+                <input type="text" id="upd_name" name="firstname" placeholder="Your name..">
+            
+                <label for="gender">Gender</label>
+                <input type="text" id="upd_gender" name="lastname" placeholder="Your Gender..">
+            
+                <label for="age">Age</label>
+                <input type="number" id="upd_age" name="lastname" placeholder="Your Age..">
+            
+                <label for="country">Country</label>
+                <select id="upd_country" name="country">
+                  <option value="Australia">Australia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Myanmar">Myanmar</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Laos">Laos</option>
+                  <option value="Vietnam">Vietnam</option>
+
+                </select>
+              
+                <input type="button" value="Update" id="updateUser">
+              </form>
+              <br/>
+          </div>
+          
+        </div>
+    
+      </div>
+    <div id="container">
+        <div id="container_one">
+            <div>
+                <form>
+               
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="gender">Gender</label>
+                  <select id="gender" name="gender">
+                    <option value="Male" selected>male</option>
+                    <option value="Female">female</option>
+                    </select>
+              
+                  <label for="age">Age</label>
+                  <input type="number" id="age" name="lastname" placeholder="Your Age..">
+                  <label for="img">Profile Image</label>
+                  <input type="file" id="profile" name="lastname" placeholder="Upload Profile Image.." >
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="Australia">Australia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Vietnam">Vietnam</option>
+
+                  </select>
+                
+                  <input type="button" value="Submit" id="saveUser">
+                </form>
+              </div>
+        </div>
+        <div id="container_two">
+            
+        </div>
+        <div id="container_three">
+          <table id="customers"></table>
+      </div>
+    </div>
+
+    <script src="dist/bundle.js"  type="module" ></script>
+</body>
+</html>
